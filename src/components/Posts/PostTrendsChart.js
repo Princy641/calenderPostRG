@@ -192,7 +192,6 @@ export default function PostTrendsChart() {
           ))}
         </div>
       </div>
-      {/* <PostsTable/> */}
     </div>
   )
 }

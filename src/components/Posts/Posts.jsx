@@ -2,6 +2,8 @@ import React from 'react';
 import SidebarNavigation from '../Sidebar/SidebarNavigation';
 import PostTrendsChart from './PostTrendsChart';
 import './Posts.css';
+// fix this
+
 
 const Posts = () => {
     return (
