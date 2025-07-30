@@ -1,0 +1,21 @@
+/* Wrapper for sidebar and main content */
+.page-layout {
+    display: flex;
+}
+
+/* Sidebar takes fixed width */
+.sidebar {
+    width: 240px;
+    /* or whatever your sidebar width is */
+    flex-shrink: 0;
+}
+
+/* Main content adjusts next to sidebar */
+.post-Container {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f7f8fc;
+    /* Optional background */
+    min-height: 100vh;
+    overflow: auto;
+}

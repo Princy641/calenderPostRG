@@ -1,0 +1,100 @@
+.analytics-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+      "Helvetica Neue", sans-serif;
+  }
+  
+  .graph-card {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .graph-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .graph-header h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+  }
+  
+  .growth-indicator {
+    font-weight: 600;
+    font-size: 16px;
+    padding: 2px 6px;
+    border-radius: 4px;
+  }
+  
+  .positive {
+    color: #00a389;
+  }
+  
+  .negative {
+    color: #ea4c89;
+  }
+  
+  /* Customize recharts styling */
+  .recharts-cartesian-grid-horizontal line {
+    stroke: #f0f0f0;
+  }
+  
+  .recharts-legend-item-text {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .recharts-tooltip-wrapper {
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .recharts-default-tooltip {
+    background-color: white !important;
+    border: none !important;
+    border-radius: 8px;
+    padding: 10px !important;
+  }
+  
+  .recharts-tooltip-label {
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  
+  .recharts-tooltip-item-list {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .recharts-tooltip-item {
+    display: flex;
+    align-items: center;
+    margin: 4px 0;
+  }
+  
+  .recharts-tooltip-item-name {
+    margin-right: 8px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .analytics-container {
+      flex-direction: column;
+    }
+  
+    .graph-card {
+      width: 100%;
+    }
+  }
+  

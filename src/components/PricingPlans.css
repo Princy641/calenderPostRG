@@ -1,0 +1,162 @@
+.pricing-container {
+    padding: 2rem;
+    color: rgb(243, 240, 240);
+    position: fixed;
+}
+
+.header {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    background: white;
+    padding: 9px 1299px 10px 9px;
+}
+
+.logo {
+    height: 35px;
+    margin-right: 10px;
+    filter: brightness(0) saturate(100%) invert(27%) sepia(94%) saturate(707%) hue-rotate(197deg) brightness(96%) contrast(96%);
+}
+
+.onboarding-text {
+    font-weight: 600;
+    font-size: 14px;
+    color: #000;
+}
+
+.menu-icon {
+    position: relative;
+    top: 37px;
+    left: -26px;
+    width: 30px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.sidebar-wrapper {
+    position: fixed;
+    top: 55px;
+    left: -260px;
+    width: 250px;
+    height: calc(100% - 55px);
+    background-color: white;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+    transition: left 0.3s ease;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-wrapper.open {
+    left: 0;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.sidebar-content {
+    flex-grow: 1;
+    padding: 10px 0;
+}
+
+.sidebar-footer {
+    margin-top: auto;
+    border-top: 1px solid #f0f0f0;
+    padding-top: 10px;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar-menu li {
+    margin-bottom: 5px;
+    cursor: pointer;
+    color: black;
+}
+
+.sidebar-menu li a {
+    display: flex;
+    align-items: center;
+    padding: 12px 20px;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.2s;
+    border-radius: 4px;
+    margin: 0 8px;
+}
+
+.sidebar-menu li a:hover {
+    background-color: #f5f5f5;
+}
+
+.sidebar-menu li.active a {
+    background-color: #f0f0ff;
+    color: #6366f1;
+}
+
+.sidebar-menu li svg {
+    margin-right: 12px;
+    color: #666;
+}
+
+.sidebar-menu li.active svg {
+    color: #6366f1;
+}
+
+.user-profile a {
+    justify-content: space-between;
+    padding: 15px 20px;
+}
+
+.user-avatar {
+    width: 32px;
+    height: 32px;
+    background-color: #e2e8f0;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    color: #4a5568;
+    margin-right: 12px;
+}
+
+.user-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-name {
+    font-weight: 500;
+    color: #1a202c;
+}
+
+.user-status {
+    font-size: 12px;
+    color: #e53e3e;
+}
+
+.chevron-icon {
+    color: #a0aec0;
+}
+
+.overlay {
+    position: fixed;
+    top: 55px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 999;
+}
